@@ -1,0 +1,11 @@
+[Unit]
+Description=Wechselt Hintergrundbild basierend auf der Uhrzeit (Hyprpaper)
+
+[Service]
+Type=oneshot
+ExecStart=/home/hyprjo/.config/hypr/scripts/hyprpaper_daycycle_changer.sh
+RemainAfterExit=true
+Restart=on-failure
+
+[Install]
+WantedBy=default.target

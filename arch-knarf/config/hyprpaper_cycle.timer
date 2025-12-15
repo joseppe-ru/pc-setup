@@ -1,0 +1,10 @@
+[Unit]
+Description=Läuft jede Stunde, um Hyprpaper zu wechseln
+
+[Timer]
+OnBootSec=1min
+OnCalendar=*-*-* *:00:00
+Persistent=true
+
+[Install]
+WantedBy=timers.target

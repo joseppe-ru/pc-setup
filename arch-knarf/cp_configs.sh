@@ -2,9 +2,13 @@
 
 echo -e "\e[31mpls Update everything before saving configs\e[0m"
 
+mkdir -p config
+
+echo "==> saving Hyprland setup (hyprland.conf)"
+cp -f ~/.config/hypr/hyprland.conf ./config/
+
 # Hyprpaper
 echo "==> saving Hyprpaper configs and systemd.service"
-mkdir -p config
 cp -f ~/.config/hypr/scripts/hyprpaper_daycycle_changer.sh ./config/
 cp -f ~/.config/systemd/user/hyprpaper_cycle.service ./config/
 cp -f ~/.config/systemd/user/hyprpaper_cycle.timer ./config/

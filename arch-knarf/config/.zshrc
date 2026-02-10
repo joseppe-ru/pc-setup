@@ -111,6 +111,9 @@ alias ls="exa -lbHT -L 1 --icons -s name"
 alias lsd="exa -lbHT -L 1 --icons -s modified"
 alias lsn="exa -lbHT -L 3 --icons -s name"
 alias lsa="exa -lHbT -L 1 -a --icons"
+alias pdf="zathura"
+
+export BROWSER=firefox
 
 fastfetch
 

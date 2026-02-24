@@ -115,6 +115,6 @@ alias pdf="zathura"
 
 export BROWSER=firefox
 
-fastfetch
+fastfetch --logo arch
 
 
